@@ -1,6 +1,0 @@
-model feas3.mod;
-data feas3.dat;
-option solver cplex; # Using full version ampl-cplex
-solve;
-print {i in ROWS} : {j in COLUMNS} max_buf[i,j] > max_buf3.out;
-print {i in ROWS} : {j in COLUMNS} min_buf[i,j] > min_buf3.out;
