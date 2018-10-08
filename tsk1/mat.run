@@ -2,4 +2,4 @@ model mat.mod;
 data mat.dat;
 option solver cplex; # Using full version ampl-cplex
 solve;
-# print {i in ROWS}: {j in COLUMNS} MaxValue[i,j] > mat.out;
+print {i in ROWS}: {j in COLUMNS} sum {k in MATS} I[k]*beam_dose[k,i,j] > beams_small.out;

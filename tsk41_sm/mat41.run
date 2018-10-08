@@ -1,0 +1,5 @@
+model mat41.mod;
+data mat41.dat;
+option solver cplex; # Using full version ampl-cplex
+solve;
+print {i in ROWS}: {j in COLUMNS} sum {k in MATS} I[k]*beam_dose[k,i,j] > beams41.out;
