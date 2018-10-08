@@ -1,6 +1,6 @@
-param num_matrices := 126; # Number of matrices in the data file to be read
-param num_rows := 60;     # Number of rows
-param num_cols := 80;     # Number of columns 
+param num_matrices := 5; # Number of matrices in the data file to be read
+param num_rows := 8;     # Number of rows
+param num_cols := 8;     # Number of columns 
 param req_dose := 10;
 param all_dose := 2;
 
