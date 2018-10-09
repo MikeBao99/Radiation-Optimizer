@@ -14,7 +14,6 @@ param beam_dose {MATS, R, C} >= 0, default 0; # beam base dosage
 param tumor {ROWS, COLUMNS} >= 0; # tumor matrix
 param crit {ROWS, COLUMNS} >= 0; # critical cell matrix
 
-
 var I {MATS} >= 0; # intensity of beams
 var max_buf {ROWS, COLUMNS} >=0; # feasibility buffer
 var min_buf {ROWS, COLUMNS} >= 0;	# feasibility buffer
